@@ -1,34 +1,547 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 16px;
     color: #4A4A4A;
 }
-#block1{
+
+#block1, #block5 {
+    width: 100%;
+    height: 794px;
     background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
-    color: #ffffff;
+    background: url("./assets/bg_orange.jpg") no-repeat;
+    background-size: cover;
 }
-#block1 h1{
-    font-family:Open Sans;
-    font-size: 56px;
-    font-weight: 800;
+
+.wrap {
+    width: 100%;
+    max-width: 12400px;
+    padding-top: 53px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 72px;
+    margin: 0 auto;
+}
+
+.head1Block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 36px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.human {
+    margin: 27px auto 0;
+    width: 1072px;
+    height: 669px;
+    background-image: url("./assets/human.png");
+    position: relative;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 108px;
+}
+
+.phoneName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
     text-align: center;
+
+    color: #FFFFFF;
+}
+
+.title-wrap {
+    padding-left: 32px;
+    margin-top: -7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+.title-wrap button:hover{
+    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
+    background: url("./assets/bg_orange.jpg") no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    color: #FFFFFF;
+}
+
+.choose {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: 0.846em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.flutter {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 128px;
+    line-height: 154px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: -30px;
+
+}
+
+.both {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.37em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: -30px;
+}
+
+.reg {
+    width: 190px;
+    height: 70px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    border: none;
+
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.photo2Block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.head2Block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head2Block h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    letter-spacing: 6px;
+
+    color: #4A4A4A;
+}
+
+.head2Block button {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    background: #FFFFFF;
+    border: 1px solid #4A4A4A;
+    width: 146px;
+    height: 46px;
+}
+
+.text2Block {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 700px;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.text2Block p {
+    margin-bottom: 0.6em;
+}
+
+.whatWhomWhy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+
+    text-align: center;
+    letter-spacing: -0.0366516px;
+
+    color: #FF7E03;
+}
+
+.peopleBlock2Block {
+    height: 340px;
+    width: 340px;
+    margin-top: 65px;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.0326923px;
+
+    color: #4A4A4A;
+}
+
+#block3 {
+    background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(./assets/blackFon.jpg);
+    margin-top: -40px;
+}
+
+#block3 div div div h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 6px;
+
+    color: #FFFFFF;
+}
+
+.content3Block {
+    padding-left: 63px;
+    padding-bottom: 24px;
+    margin-top: 74px;
+    margin-bottom: 42px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    mix-blend-mode: normal;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.boxInContent3Block {
+
+    height: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+
+.highText {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+
+    margin-top: 18px;
+    margin-bottom: 33px;
+}
+
+.smallText3Block {
+    font-family: Fira Sans;
+    font-size: 17px;
+    margin-bottom: 16px;
+    letter-spacing: -0.0326923px;
+}
+
+.learnUp3Block {
+    font-family: Fira Sans;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 20px;
+    letter-spacing: -0.0326923px;
+
+    margin-bottom: 13px;
+}
+
+.veryHighText3Block {
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 13.2778px;
     text-transform: uppercase;
 }
 
-h2{
-    font-family:Open Sans;
-    font-weight: 400;
-    font-size: 36px;
+.superHighText3Block {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 80px;
+
+    letter-spacing: -0.0871795px;
+}
+
+#block3 button {
+    background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(./assets/blackFon.jpg);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+
     text-align: center;
     text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: -7px;
 }
-#block2,#block4,#block6 h2{
+
+#block4 div div h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+#block4 div div span {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#block4 div button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+
+    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    color: #FFFFFF;
+}
+
+#block5 {
+    color: #FFFFFF;
+}
+
+#block5 p {
+    color: #FFFFFF;
+}
+
+#block5 div div h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.december {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 36px;
+
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.photo5Block div:last-child {
+    margin-right: 50px;
+}
+
+.smile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 66px;
+}
+
+.smile span:first-child {
+    font-family: Fira Sans;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.smile span:last-child {
+    margin-right: 77px;
+    font-family: Source Sans Pro;
+    font-size: 19px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+    letter-spacing: -0.0365385px;
+    text-decoration-line: underline;
+}
+
+#block5 div button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+}
+
+#block6 div div h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.content6Block {
+    width: 940px;
+    height: 240px;
+    margin: auto;
+    margin-top: 90px;
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content6Block p {
+    margin-top: 1em;
+}
+
+.social {
+    width: 940px;
+    margin: auto;
+    margin-top: 107px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social div > * {
+    margin-right: 25px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.social div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social button {
+    width: 206px;
+    height: 46px;
+    border: none;
+    background: #FF7E03;
+    font-family: Open Sans;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 137px;
+}
+
+.copy span:first-child {
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    line-height: 19px;
     color: #000000;
 }
-#block3,#block5 h2{
-    color: #ffffff;
+
+.copy span:last-child {
+
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+
+    color: #FF7E03;
 }
