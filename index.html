@@ -6,123 +6,218 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<style>
-    #price {
-        border-collapse: collapse;
-        border: 1px solid orange;
-        border-top: 5px solid orange;
-    }
-    #price tr {
-        border: 1px solid orange;
-    }
-    #price td {
+<header>
+    <div id="block1">
+        <div class="wrap">
+            <div class="head1Block">
+                <img src="./assets/logo-white.svg" alt="Логотип"/>
+                December 2021
+            </div>
 
-        border: 1px solid orange;
-    }
-    .modelAndPrice{
-        text-align: center;
-    }
-</style>
-<div id="block1">
-    <table width="100%">
-        <tr>
-            <td><img src="./assets/logo-black.png" srcset="assets/logo-black@2x.png 2x, ./assets/logo-black@4x.png 4x" alt="Логотип"></td>
-            <td align="right" >DECEMBER 2021</td>
-        </tr>
-    </table>
+            <div class="human">
+                <div class="phone">
+                <span class="phoneName">
+                    <img src="./assets/iphone.png" alt="Айфон">
+                iOS
+                </span>
+                    <span class="phoneName">
+                    <img src="./assets/android.png" alt="Андройд">
+                Android
+                </span>
 
-    <img src="./assets/human.png" srcset="./assets/human@2x.png 2x,./assets/human@4x.png 4x " alt="Человек">
-    <h1>
-        CHOOSE FLUTTER TO CHOOSE BOTH
-    </h1>
-    <button>REGISTER</button>
-</div>
+                </div>
+
+                <div class="title-wrap">
+                    <main>
+                        <div class="title">
+                            <div class="choose">CHOOSE</div>
+                            <h1 class="flutter">FLUTTER</h1>
+                            <div class="both">TO CHOOSE BOTH</div>
+                        </div>
+                    </main>
+                    <button class="reg">REGISTER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <div id="block2">
-    <h2>WORKSHOP</h2>
-    <p>We're launching a series of practical workshops on development in January 2020. We'll
-        teach you how to know your way around software, share the latest news, and help to start.</p>
-    <p>First workshop will familiarize you with cross-platform mobile development toolkit called
-        Flutter. Join if you're aspiring to learn how to develop mobile apps and master new
-        tools, but unsure what to start with.</p>
+    <div class="wrap">
+        <div class="head2Block">
+            <span> <img src="./assets/logo-black.png" alt="LearUp"></span>
+            <h2>WORKSHOP</h2>
+            <button>Register</button>
+        </div>
+        <section>
+            <div class="text2Block">
+                <p>We're launching a series of practical workshops on development in January 2020. We'll
+                    teach you how to know your way around software, share the latest news, and help to start.</p>
+                <p>First workshop will familiarize you with cross-platform mobile development toolkit called
+                    Flutter. Join if you're aspiring to learn how to develop mobile apps and master new
+                    tools, but unsure what to start with.</p>
+            </div>
+        </section>
+        <div class="photo2Block">
+            <div class="peopleBlock2Block">
+                <div class="whatWhomWhy">
+                    <img src="./assets/what.png" alt="About what">
+                    ABOUT WHAT
+                </div>
+                Platform perks, intro to Dart language and creating your own apps. Bonus: intro to (fantastic)
+                animation.
+            </div>
+            <div class="peopleBlock2Block">
+                <div class="whatWhomWhy">
+                    <img src="./assets/whom.png" alt="For whom">
+                    FOR WHOM
+                </div>
+                Students and IT professionals that try to decide if they want to work with mobile app development fast.
+            </div>
+            <div class="peopleBlock2Block">
+                <div class="whatWhomWhy">
+                    <img src="./assets/why.png" alt="Why">
+                    WHY
+                </div>
+                To cover cross-platform development bases quickly. Understand pros and cons if it using workshop format.
+            </div>
+        </div>
+    </div>
 </div>
 <div id="block3">
-    <div>
-        <h2>WHEN AND WHERE</h2>
-        <h3>Where</h3>
-        <p>Moscow, office</p>
-    </div>
-    <div>
-        <h3>About the course</h3>
-        <p>Duration: 2 weeks</p>
-        <p>Comprises 4 2-hour modules twice a week.</p>
-    </div>
-    <div>
-        <h3>When</h3>
-        <p>DECEMBER 2021</p>
+    <div class="wrap">
+        <div>
+            <div class="head2Block">
+                <span> <img src="./assets/logo-white.svg" alt="Логотип"/></span>
+                <h2>WHEN AND WHERE</h2>
+                <button class="blackReg">Register</button>
+            </div>
+        </div>
+        <div class="content3Block">
+            <div class="boxInContent3Block">
+                <div class="highText">
+                    Where
+                </div>
+                <span class="smallText3Block">
+                    Moscow, office
+                </span>
+                <span class="learnUp3Block">
+                        LearnUp
+                </span>
+                <span class="smallText3Block">
+                    <img src="./assets/geo.png" alt="Гео"> Sloboda st., 5
+                </span>
+
+            </div>
+            <div class="boxInContent3Block">
+                <div class="highText">About the course</div>
+                <span class="smallText3Block">Duration: 2 weeks.</span>
+                <span class="smallText3Block">Comprises 4 2-hour modules twice a week.</span>
+            </div>
+            <div class="boxInContent3Block">
+                <div class="highText">When</div>
+                <span class="veryHighText3Block">DECEMBER</span>
+                <span class="superHighText3Block">2021</span>
+            </div>
+            <div class="boxInContent3Block">
+                <div class="highText"> </div>
+                <span class="veryHighText3Block">
+                        Cost
+                </span>
+                <span class="superHighText3Block">
+                        Free
+                </span>
+            </div>
+        </div>
     </div>
 </div>
 <div id="block4">
-    <h2>WHO</h2>
-    <table width="100%" id="price">
-        <caprion>Цены на флагманские модели iPhone и Xiaomi</caprion>
-       <tr>
-           <th width="30%" align="left">Производитель</th>
-           <th width="50%" >Модель</th>
-           <th width="20%">Цена</th>
-       </tr>
-        <tr>
-            <td rowspan="3">iPhone</td>
-            <td class="modelAndPrice">12 Pro</td>
-            <td class="modelAndPrice">$999</td>
-        </tr>
-        <tr>
-            <td class="modelAndPrice">12</td>
-            <td class="modelAndPrice">$799</td>
-        </tr>
-        <tr>
-            <td class="modelAndPrice">12 mini</td>
-            <td class="modelAndPrice">$699</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Xiaomi</td>
-            <td class="modelAndPrice">Mi 10</td>
-            <td class="modelAndPrice">$768</td>
-        </tr>
-        <tr>
-            <td class="modelAndPrice">Black Shark 3 128GB</td>
-            <td class="modelAndPrice">$529</td>
-        </tr>
-        <tfoot>
-             <tr>
-                 <td colspan="2">Средняя цена</td>
-                 <td class="modelAndPrice">$758.8</td>
-             </tr>
-        </tfoot>
-    </table>
-    <button>Register</button>
+    <div class="wrap">
+        <div class="head2Block">
+            <span> <img src="./assets/logo-black.png" alt="LearUp"></span>
+            <h2>WHO</h2>
+            <span> December 2021</span>
+        </div>
+        <button class="reg bigReg">REGISTER</button>
+    </div>
 </div>
 <div id="block5">
-    <h2>GET READY</h2>
-    <p>We prepared some materials to get to know the platform. You're not obliged to study them,
-        but it'll help to learn the basics faster and easier, prepare a list of questions to
-        lecturers, and have a more productive workshop experience.
-    </p>
-    <button>Register</button>
+    <div class="wrap">
+        <div class="head2Block">
+            <span> <img src="./assets/logo-white.svg" alt="Логотип"/></span>
+            <h2>GET READY</h2>
+            <span class="december"> December 2021</span>
+        </div>
+        <section>
+            <p class="text2Block">
+                We prepared some materials to get to know the platform. You're not obliged to study them, but it'll help
+                to
+                learn the basics faster and easier, prepare a list of questions to lecturers, and have a more productive
+                workshop experience.
+            </p>
+        </section>
+        <div class="photo2Block photo5Block">
+            <div class="smile">
+                <span>1. Watch</span>
+                <span>a boring Google presentation &#128540;</span>
+            </div>
+            <div class="smile">
+                <span>2. Read</span>
+                <span>about Flutter here and here on Habr&#129299;</span>
+            </div>
+            <div class="smile">
+                <span>3. SCAN</span>
+                <span>Flutter documentation&#128557;</span>
+            </div>
+        </div>
+        <button class="reg bigReg">REGISTER</button>
+    </div>
 </div>
-<div id="block6">
-    <h2>ORGANIZERS</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non
-        possimus velit. Atque eveniet facere magni molestias nostrum nulla odio odit pariatur
-        rerum sunt! A aperiam architecto, beatae, ea eius est expedita facere, itaque minus nam
-        obcaecati perferendis quia quis soluta totam unde vero. Accusantium aperiam beatae
-        consequatur culpa dolor, earum eius expedita fuga illo ipsa libero maiores maxime
-        molestias nulla numquam obcaecati odit praesentium sunt tenetur totam.
-    </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non
-        possimus velit. Atque eveniet facere magni molestias nostrum nulla odio odit pariatur
-        rerum sunt! A aperiam architecto, beatae, ea eius est expedita facere, itaque minus nam
-        obcaecati perferendis quia quis soluta totam unde vero.
-    </p>
-</div>
+<footer>
+    <div id="block6">
+        <div class="wrap">
+            <div class="head2Block">
+                <span> <img src="./assets/logo-black.png" alt="LearUp"></span>
+                <h2>ORGANIZERS</h2>
+                <button>Register</button>
+            </div>
+            <section>
+                <div class="content6Block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non possimus
+                        velit.
+                        Atque eveniet facere magni molestias nostrum nulla odio odit pariatur rerum sunt! A aperiam
+                        architecto,
+                        beatae, ea eius est expedita facere, itaque minus nam obcaecati perferendis quia quis soluta
+                        totam
+                        unde
+                        vero. Accusantium aperiam beatae consequatur culpa dolor, earum eius expedita fuga illo ipsa
+                        libero
+                        maiores maxime molestias nulla numquam obcaecati odit praesentium sunt tenetur totam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem eius non possimus
+                        velit.
+                        Atque eveniet facere magni molestias nostrum nulla odio odit pariatur rerum sunt! A aperiam
+                        architecto,
+                        beatae, ea eius est expedita facere, itaque minus nam obcaecati perferendis quia quis soluta
+                        totam
+                        unde
+                        vero.</p>
+                </div>
+            </section>
+            <div class="social">
+                <div>
+                    <img src="./assets/f.png" alt="f"/>
+                    <img src="./assets/photo.png" alt="photo"/>
+                    <img src="./assets/in.png" alt="in"/>
+                    <div>Join us in social media</div>
+                </div>
+                <button>Explore openings</button>
+            </div>
+            <div class="copy">
+                <span>&#169;2021 LearnUp</span>
+                <span>email@learnup.ru</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
